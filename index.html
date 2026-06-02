@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sai Aung Mein — Full Stack Developer</title>
+  <meta name="description" content="Full Stack Developer specializing in .NET, Python, Vue, Angular, and AI/GenAI." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">[</span>SAM<span class="logo-bracket">]</span>
+      </a>
+      <div class="nav-right">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about" data-text="About">About</a></li>
+          <li><a href="#skills" data-text="Skills">Skills</a></li>
+          <li><a href="#projects" data-text="Projects">Projects</a></li>
+          <li><a href="#contact" data-text="Contact">Contact</a></li>
+        </ul>
+        <button class="menu-btn" id="menuBtn" aria-label="Menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-noise"></div>
+    <div class="hero-glow"></div>
+
+    <div class="hero-inner">
+      <div class="hero-tag"><span class="tag-dot"></span> Available for work</div>
+
+      <h1 class="hero-heading">
+        <span class="line-wrap"><span class="reveal-line">Full Stack</span></span>
+        <span class="line-wrap"><span class="reveal-line delay-1">Developer<span class="hero-dot">.</span></span></span>
+      </h1>
+
+      <div class="hero-sub-row">
+        <p class="hero-sub">
+          Building enterprise apps & AI systems with <em>.NET</em>, <em>Python</em>,
+          <em>Vue</em> &amp; <em>Angular</em> — based in Singapore.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn-main magnetic">See My Work <span class="btn-arrow">→</span></a>
+          <a href="#contact" class="btn-ghost magnetic">Say Hello</a>
+        </div>
+      </div>
+
+      <div class="hero-bottom">
+        <div class="hero-scroll">
+          <span class="scroll-line"></span>
+          <span>Scroll</span>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/SaiAungMein" target="_blank" rel="noopener" class="social-link magnetic">GH</a>
+          <a href="https://linkedin.com/in/saiaungmein" target="_blank" rel="noopener" class="social-link magnetic">LI</a>
+          <a href="mailto:saiaungmeing1500@gmail.com" class="social-link magnetic">EM</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee strip -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span>C# / .NET</span><span class="sep">✦</span>
+      <span>Python</span><span class="sep">✦</span>
+      <span>FastAPI</span><span class="sep">✦</span>
+      <span>Vue 3</span><span class="sep">✦</span>
+      <span>Angular</span><span class="sep">✦</span>
+      <span>Blazor</span><span class="sep">✦</span>
+      <span>OpenAI</span><span class="sep">✦</span>
+      <span>LangChain</span><span class="sep">✦</span>
+      <span>Docker</span><span class="sep">✦</span>
+      <span>Azure</span><span class="sep">✦</span>
+      <span>PostgreSQL</span><span class="sep">✦</span>
+      <span>Android</span><span class="sep">✦</span>
+      <!-- duplicate for seamless loop -->
+      <span>C# / .NET</span><span class="sep">✦</span>
+      <span>Python</span><span class="sep">✦</span>
+      <span>FastAPI</span><span class="sep">✦</span>
+      <span>Vue 3</span><span class="sep">✦</span>
+      <span>Angular</span><span class="sep">✦</span>
+      <span>Blazor</span><span class="sep">✦</span>
+      <span>OpenAI</span><span class="sep">✦</span>
+      <span>LangChain</span><span class="sep">✦</span>
+      <span>Docker</span><span class="sep">✦</span>
+      <span>Azure</span><span class="sep">✦</span>
+      <span>PostgreSQL</span><span class="sep">✦</span>
+      <span>Android</span><span class="sep">✦</span>
+    </div>
+  </div>
+
+  <!-- About + Stats (Bento) -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="bento-about">
+
+        <!-- Bio card - large -->
+        <div class="bento-card bio-card stagger">
+          <div class="card-label">About</div>
+          <h2 class="bento-title">I craft software that <span class="underline-red">actually works</span> in production.</h2>
+          <p>
+            Full stack developer with experience shipping enterprise web apps, mobile apps,
+            and AI-powered systems. From designing REST APIs and database schemas to
+            building responsive frontends — I own the whole stack.
+          </p>
+          <p>
+            Currently focused on <strong>Generative AI integration</strong> — including an enterprise
+            data management system for Singapore's Civil Aviation Authority that uses
+            OpenAI to intelligently transform unstructured documents into structured data.
+          </p>
+        </div>
+
+        <!-- Stat cards -->
+        <div class="bento-card stat-card stagger">
+          <span class="stat-big">5+</span>
+          <span class="stat-label">Projects Shipped</span>
+        </div>
+
+        <div class="bento-card stat-card stagger">
+          <span class="stat-big">4+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+
+        <div class="bento-card stat-card stagger">
+          <span class="stat-big">8+</span>
+          <span class="stat-label">Tech Used</span>
+        </div>
+
+        <!-- Location card -->
+        <div class="bento-card location-card stagger">
+          <div class="card-label">Location</div>
+          <div class="location-text">
+            <span class="location-flag">🇸🇬</span>
+            <span>Singapore</span>
+          </div>
+          <div class="location-sub">Open to remote</div>
+        </div>
+
+        <!-- Currently card -->
+        <div class="bento-card current-card stagger">
+          <div class="card-label">Currently</div>
+          <div class="current-items">
+            <div class="current-item">
+              <span class="current-dot active"></span>
+              <span>Building AI-powered apps</span>
+            </div>
+            <div class="current-item">
+              <span class="current-dot active"></span>
+              <span>Learning new frameworks</span>
+            </div>
+            <div class="current-item">
+              <span class="current-dot"></span>
+              <span>Open to opportunities</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills (Bento) -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">What I Know</p>
+        <h2 class="section-h2">Tech Stack</h2>
+      </div>
+
+      <div class="bento-skills">
+
+        <div class="bento-card skill-card sk-backend stagger">
+          <div class="sk-icon">⚙️</div>
+          <h3>Backend</h3>
+          <div class="sk-tags">
+            <span>C# / .NET Core</span>
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>Django</span>
+            <span>REST APIs</span>
+            <span>ASP.NET</span>
+          </div>
+        </div>
+
+        <div class="bento-card skill-card sk-frontend stagger">
+          <div class="sk-icon">🖥️</div>
+          <h3>Frontend</h3>
+          <div class="sk-tags">
+            <span>Vue 3</span>
+            <span>Nuxt</span>
+            <span>Angular</span>
+            <span>Blazor</span>
+            <span>Vuetify</span>
+            <span>TypeScript</span>
+          </div>
+        </div>
+
+        <div class="bento-card skill-card sk-ai stagger">
+          <div class="sk-icon">🤖</div>
+          <h3>AI / GenAI</h3>
+          <p class="sk-desc">Integrating LLMs into real enterprise workflows</p>
+          <div class="sk-tags">
+            <span class="red-tag">OpenAI API</span>
+            <span class="red-tag">LangChain</span>
+            <span class="red-tag">LangChain SQL</span>
+            <span class="red-tag">Prompt Engineering</span>
+          </div>
+        </div>
+
+        <div class="bento-card skill-card sk-mobile stagger">
+          <div class="sk-icon">📱</div>
+          <h3>Mobile</h3>
+          <div class="sk-tags">
+            <span>Android (Java)</span>
+            <span>Barcode / QR</span>
+          </div>
+        </div>
+
+        <div class="bento-card skill-card sk-db stagger">
+          <div class="sk-icon">🗄️</div>
+          <h3>Database</h3>
+          <div class="sk-tags">
+            <span>PostgreSQL</span>
+            <span>SQL Server</span>
+            <span>SQLite</span>
+          </div>
+        </div>
+
+        <div class="bento-card skill-card sk-devops stagger">
+          <div class="sk-icon">🚀</div>
+          <h3>DevOps</h3>
+          <div class="sk-tags">
+            <span>Docker</span>
+            <span>Azure Pipelines</span>
+            <span>Pulumi (IaC)</span>
+            <span>GitHub Actions</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">What I've Built</p>
+        <h2 class="section-h2">Projects</h2>
+      </div>
+
+      <div class="projects-list">
+
+        <div class="project-row stagger">
+          <div class="proj-meta">
+            <span class="proj-num">01</span>
+            <span class="proj-badge badge-red">AI / Enterprise</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">EDMS — AI-Powered Data Management</h3>
+            <p class="proj-desc">
+              Enterprise Data Management System for Singapore's Civil Aviation Authority (CAAS)
+              at ABeam Analytics. Uses OpenAI to transform unstructured documents into structured
+              database records. Features document encryption, virus scanning, and secure auth.
+            </p>
+            <div class="proj-tags">
+              <span>FastAPI</span><span>Vue 3 / Nuxt</span><span>OpenAI</span>
+              <span>PostgreSQL</span><span>Vuetify</span>
+            </div>
+          </div>
+          <div class="proj-arrow">
+            <span class="private-note">Private repo</span>
+          </div>
+        </div>
+
+        <div class="project-row stagger">
+          <div class="proj-meta">
+            <span class="proj-num">02</span>
+            <span class="proj-badge badge-blue">Enterprise</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">Haulio VMS — Vehicle Management System</h3>
+            <p class="proj-desc">
+              Full-stack vehicle management platform. ASP.NET Core backend, Angular frontend,
+              CI/CD via Azure Pipelines, Pulumi for infrastructure-as-code, and containerized
+              with Docker for consistent staging and production deployments.
+            </p>
+            <div class="proj-tags">
+              <span>ASP.NET Core</span><span>Angular</span><span>Docker</span>
+              <span>Azure Pipelines</span><span>Pulumi</span>
+            </div>
+          </div>
+          <div class="proj-arrow">
+            <span class="private-note">Private repo</span>
+          </div>
+        </div>
+
+        <div class="project-row stagger">
+          <div class="proj-meta">
+            <span class="proj-num">03</span>
+            <span class="proj-badge badge-green">GenAI</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">LangChain SQL Agent</h3>
+            <p class="proj-desc">
+              Natural language to SQL query agent using LangChain. Query any database
+              in plain English. FastAPI or Django backend handles query translation and
+              executes results back to the user.
+            </p>
+            <div class="proj-tags">
+              <span>LangChain</span><span>Python</span><span>Django</span><span>SQLite</span>
+            </div>
+          </div>
+          <div class="proj-arrow">↗</div>
+        </div>
+
+        <div class="project-row stagger">
+          <div class="proj-meta">
+            <span class="proj-num">04</span>
+            <span class="proj-badge badge-green">GenAI</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">GenAI Chat Application</h3>
+            <p class="proj-desc">
+              Generative AI chat interface with a FastAPI backend and Vue 3 frontend.
+              Explores prompt engineering patterns and conversational AI workflows.
+            </p>
+            <div class="proj-tags">
+              <span>FastAPI</span><span>Vue 3</span><span>Python</span><span>Uvicorn</span>
+            </div>
+          </div>
+          <div class="proj-arrow">↗</div>
+        </div>
+
+        <div class="project-row stagger">
+          <div class="proj-meta">
+            <span class="proj-num">05</span>
+            <span class="proj-badge badge-purple">Blazor</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">MagicBlazor</h3>
+            <p class="proj-desc">
+              Web app built with C# Blazor, demonstrating .NET's component model for
+              interactive UIs with shared C# logic across client and server.
+            </p>
+            <div class="proj-tags">
+              <span>C# Blazor</span><span>.NET</span><span>Razor</span>
+            </div>
+          </div>
+          <div class="proj-arrow">↗</div>
+        </div>
+
+        <div class="project-row stagger">
+          <div class="proj-meta">
+            <span class="proj-num">06</span>
+            <span class="proj-badge badge-orange">Mobile</span>
+          </div>
+          <div class="proj-body">
+            <h3 class="proj-title">Android Barcode Reader</h3>
+            <p class="proj-desc">
+              Native Android app for scanning barcodes and QR codes in a CRM workflow.
+              Real-time scanning, data lookup, and backend sync.
+            </p>
+            <div class="proj-tags">
+              <span>Android</span><span>Java</span><span>Barcode API</span>
+            </div>
+          </div>
+          <div class="proj-arrow">↗</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="contact-inner stagger">
+        <p class="eyebrow">Get In Touch</p>
+        <h2 class="contact-big">Let's build something<br/><span class="stroke-text">together.</span></h2>
+        <p class="contact-sub">
+          Open to full-time roles, freelance projects, or collaboration.
+          Drop me a message — I reply fast.
+        </p>
+        <div class="contact-actions">
+          <a href="mailto:saiaungmeing1500@gmail.com" class="btn-main btn-xl magnetic">
+            saiaungmeing1500@gmail.com <span class="btn-arrow">↗</span>
+          </a>
+        </div>
+        <div class="contact-links">
+          <a href="https://github.com/SaiAungMein" target="_blank" rel="noopener" class="contact-link magnetic">GitHub ↗</a>
+          <a href="https://linkedin.com/in/saiaungmein" target="_blank" rel="noopener" class="contact-link magnetic">LinkedIn ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo"><span class="logo-bracket">[</span>SAM<span class="logo-bracket">]</span></span>
+      <span>Designed & Built by Sai Aung Mein — 2026</span>
+      <span class="footer-mono">saiaungmein.github.io</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
