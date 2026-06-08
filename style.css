@@ -485,14 +485,14 @@ ul { list-style: none; }
 /* ===== Bento Skills ===== */
 .bento-skills {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 }
 .skill-card {
   background: var(--dark-3);
   border: 1px solid var(--border-dark);
   color: var(--white);
-  padding: 32px;
+  padding: 28px;
   border-radius: 20px;
   transition: border-color 0.2s, box-shadow 0.3s, transform 0.2s;
 }
@@ -506,7 +506,7 @@ ul { list-style: none; }
   border-color: rgba(255,0,0,0.25);
   grid-column: span 2;
 }
-.sk-icon { font-size: 1.5rem; margin-bottom: 14px; }
+.sk-icon { font-size: 1.5rem; margin-bottom: 14px; font-family: var(--mono); }
 .skill-card h3 {
   font-size: 1rem;
   font-weight: 700;
@@ -539,6 +539,57 @@ ul { list-style: none; }
   color: #ff6666;
 }
 .sk-tags .red-tag:hover { background: rgba(255,0,0,0.2); }
+
+/* ===== Experience List ===== */
+.exp-list { display: flex; flex-direction: column; }
+.exp-row {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  align-items: start;
+  gap: 32px;
+  padding: 36px 0;
+  border-bottom: 1px solid var(--border);
+  transition: padding-left 0.3s ease;
+}
+.exp-row:last-child { border-bottom: none; }
+.exp-row:hover { padding-left: 12px; }
+.exp-period {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--gray);
+  padding-top: 6px;
+  white-space: nowrap;
+}
+.exp-role {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 2px;
+}
+.exp-company {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--red);
+  margin-bottom: 12px;
+}
+.exp-desc {
+  font-size: 0.9rem;
+  color: var(--gray);
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+.exp-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.exp-tags span {
+  font-size: 0.75rem;
+  padding: 4px 12px;
+  border-radius: 100px;
+  border: 1px solid var(--border);
+  color: var(--gray);
+}
 
 /* ===== Projects List ===== */
 .projects-list { display: flex; flex-direction: column; }
@@ -711,6 +762,8 @@ ul { list-style: none; }
   .current-card { grid-column: span 2; }
   .bento-skills { grid-template-columns: repeat(2, 1fr); }
   .sk-ai { grid-column: span 2; }
+  .exp-row { grid-template-columns: 120px 1fr; gap: 20px; }
+
   .project-row { grid-template-columns: 100px 1fr 40px; gap: 20px; }
 }
 @media (max-width: 680px) {
@@ -723,6 +776,9 @@ ul { list-style: none; }
   .bio-card, .current-card { grid-column: span 1; }
   .bento-skills { grid-template-columns: 1fr; }
   .sk-ai { grid-column: span 1; }
+
+  .exp-row { grid-template-columns: 1fr; gap: 8px; padding: 28px 0; }
+  .exp-period { padding-top: 0; }
 
   .project-row {
     grid-template-columns: 1fr;
